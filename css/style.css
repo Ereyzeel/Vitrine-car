@@ -195,4 +195,10 @@ section.electro-boss .line-titulo h2{
 }
 
 
-
+.about_left{
+    float: left;
+    width: 50%;
+    background-color: #523b2f;
+    padding: 90px 0;
+    color: white;
+}
