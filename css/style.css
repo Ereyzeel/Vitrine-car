@@ -177,10 +177,8 @@ section.electro-boss .line-titulo h2{
     font-size: 15px;
 }
 
-.THE-bosses a{
+.btn{
     display: block;
-    margin-left: 8px;
-    margin-top: 16px;
     width: 150px;
     line-height: 40px;
     font-style: italic;
@@ -195,10 +193,44 @@ section.electro-boss .line-titulo h2{
 }
 
 
+.THE-bosses a{
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+
 .about_left{
     float: left;
     width: 50%;
     background-color: #523b2f;
     padding: 90px 0;
+    text-align: center;
     color: white;
 }
+
+.about_left-wraper{
+    text-align: left;
+    display: inline-block;
+}
+
+.about_left-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.about_left-wraper ul{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about_left-wraper li{
+    margin-left: 15px;
+}
+
+.about_left-wraper a{
+    margin-left: 70px;  
+    display: inline-block;
+    vertical-align: bottom;
+}
+
