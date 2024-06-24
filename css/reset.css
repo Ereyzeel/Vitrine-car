@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "genshin font" ;
+}
+
+html,body{
+    height: 100dvh;
+    height: 100vh;
+    height: 100%;
+    /* overflow-y: hidden; */
+}
+
+@font-face {
+    font-family: "genshin font" ;
+    src:url('../fonts/genshin-font.ttf');
+}
+
+.clear{
+    clear: both;
+}
+
+header nav.desktop ul li{
+    list-style-type: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
