@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 
 header{
     padding: 30px 4%;
@@ -31,7 +39,11 @@ nav.mobile{
     width: 32px;
     height: 32px;
     background-size: 100% 100%;
+<<<<<<< HEAD
     background-image: url('../images/icon_menu.png');
+=======
+    background-image: url('/images/icon_menu.png');
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
 
  nav.mobile ul{
@@ -112,7 +124,11 @@ img{
 
 
 section.electro-boss{
+<<<<<<< HEAD
     padding: 90px 2% 100px 2%;
+=======
+    padding: 90px 2%;
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
 
 section.electro-boss .container{
@@ -120,7 +136,11 @@ section.electro-boss .container{
     padding: 40px 0;
 }
 
+<<<<<<< HEAD
 .line-titulo h2{
+=======
+section.electro-boss .line-titulo h2{
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     padding: 0 10px;
     position: relative;
     display: inline-block;
@@ -134,7 +154,12 @@ section.electro-boss .container{
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
+<<<<<<< HEAD
     text-align: center;  
+=======
+    text-align: center;
+    
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
 
 .line-right{
@@ -171,16 +196,24 @@ section.electro-boss .container{
     font-size: 15px;
 }
 
+<<<<<<< HEAD
 .btn-default{
     display: block;
     margin-left: 8px;
     margin-top: 16px;
+=======
+.btn{
+    display: block;
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     width: 150px;
     line-height: 40px;
     font-style: italic;
     text-align: center;
     color: white;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     background-color:#EB2D2D ;
     text-decoration: none;
     border-bottom: 6px solid #c22626;
@@ -189,6 +222,7 @@ section.electro-boss .container{
     border-right:  6px solid #e66565;
 }
 
+<<<<<<< HEAD
 section.servicos-descricao {
     width: 100%;
     min-height: 15vh;
@@ -205,10 +239,30 @@ section.servicos-descricao {
 }
 
 .left-wraper{
+=======
+
+.THE-bosses a{
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+
+.about_left{
+    float: left;
+    width: 50%;
+    background-color: #523b2f;
+    padding: 90px 0;
+    text-align: center;
+    color: white;
+}
+
+.about_left-wraper{
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     text-align: left;
     display: inline-block;
 }
 
+<<<<<<< HEAD
 .left-wraper h2{
     font-weight: normal;
     font-style: italic;
@@ -362,3 +416,26 @@ section.venda-section{
 
 
 
+=======
+.about_left-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.about_left-wraper ul{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about_left-wraper li{
+    margin-left: 15px;
+}
+
+.about_left-wraper a{
+    margin-left: 70px;  
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104

@@ -6,8 +6,11 @@
 }
 
 html,body{
+<<<<<<< HEAD
     height: 100dvh;
     height: 100vh;
+=======
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     height: 100%;
     /* overflow-y: hidden; */
 }
@@ -25,9 +28,12 @@ header nav.desktop ul li{
     list-style-type: none;
 }
 
+<<<<<<< HEAD
 .container{
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
+=======
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104

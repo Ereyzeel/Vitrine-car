@@ -12,6 +12,7 @@
 } */
 
 @media (max-width:768px){
+<<<<<<< HEAD
 
     footer nav ul{
         display: none;
@@ -43,6 +44,8 @@
         display: block;
     }
     
+=======
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     .text-banner{
         display: flex;
         flex-direction: column;
@@ -146,9 +149,12 @@
         height: 70vh;
         min-height: 500px;
     }
+<<<<<<< HEAD
 
     .left{
         text-align: center;
     }
 
+=======
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
