@@ -1,8 +1,11 @@
+<<<<<<< HEAD
+=======
 .container{
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 
 header{
     padding: 30px 4%;
@@ -36,7 +39,11 @@ nav.mobile{
     width: 32px;
     height: 32px;
     background-size: 100% 100%;
+<<<<<<< HEAD
+    background-image: url('../images/icon_menu.png');
+=======
     background-image: url('/images/icon_menu.png');
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
 
  nav.mobile ul{
@@ -117,7 +124,11 @@ img{
 
 
 section.electro-boss{
+<<<<<<< HEAD
+    padding: 90px 2% 100px 2%;
+=======
     padding: 90px 2%;
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
 
 section.electro-boss .container{
@@ -125,7 +136,11 @@ section.electro-boss .container{
     padding: 40px 0;
 }
 
+<<<<<<< HEAD
+.line-titulo h2{
+=======
 section.electro-boss .line-titulo h2{
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     padding: 0 10px;
     position: relative;
     display: inline-block;
@@ -139,8 +154,12 @@ section.electro-boss .line-titulo h2{
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
+<<<<<<< HEAD
+    text-align: center;  
+=======
     text-align: center;
     
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
 }
 
 .line-right{
@@ -177,13 +196,24 @@ section.electro-boss .line-titulo h2{
     font-size: 15px;
 }
 
+<<<<<<< HEAD
+.btn-default{
+    display: block;
+    margin-left: 8px;
+    margin-top: 16px;
+=======
 .btn{
     display: block;
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     width: 150px;
     line-height: 40px;
     font-style: italic;
     text-align: center;
     color: white;
+<<<<<<< HEAD
+    cursor: pointer;
+=======
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     background-color:#EB2D2D ;
     text-decoration: none;
     border-bottom: 6px solid #c22626;
@@ -192,6 +222,24 @@ section.electro-boss .line-titulo h2{
     border-right:  6px solid #e66565;
 }
 
+<<<<<<< HEAD
+section.servicos-descricao {
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+}
+
+.left , .right{
+    float: left;
+    text-align: center;
+    width: 50%;
+    padding: 90px 0 50px 0;
+    background:#1d141a;
+    color: white;
+}
+
+.left-wraper{
+=======
 
 .THE-bosses a{
     margin-left: 8px;
@@ -209,10 +257,166 @@ section.electro-boss .line-titulo h2{
 }
 
 .about_left-wraper{
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
     text-align: left;
     display: inline-block;
 }
 
+<<<<<<< HEAD
+.left-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.left-wraper ul{
+    display: inline-block;  
+    list-style-position: inside;
+    margin-top: 20px;
+}
+
+.left-wraper a{
+    margin: 0 40px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.right{     
+    background-color: #a35b5e;
+}
+
+.right p {
+    margin: 23px 0;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+.navigation{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation figure{
+    cursor: pointer;
+    float: left;
+    margin: 0 15px;
+}
+
+.navigation figure img{
+    width: 27px;
+    object-fit: contain;
+}
+.nome-depoimento{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+section.contato{
+    padding: 80px 2%;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+section.contato .input-wraper{
+    float: left;
+    padding: 10px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border:1px solid gray;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+section.contato textarea{
+    width: 100%;
+    border: 1px soli gray;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+section.contato input[type=submit]{
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    display: inline-block;
+    margin: 0 0 30px 0;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+footer{
+    padding: 30px 2%;
+    background:#1d141a ;
+}
+
+footer nav{
+    float: left;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 12px;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    padding: 0 30px;
+    font-style: italic;
+    float: left;
+}
+
+footer nav ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+/* STYLE PAGE VENDA STAR HERE */
+
+section.venda-section{
+    min-height: 100dvh;
+    min-height: 100vh;
+    min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
 .about_left-wraper h2{
     font-weight: normal;
     font-style: italic;
@@ -234,3 +438,4 @@ section.electro-boss .line-titulo h2{
     vertical-align: bottom;
 }
 
+>>>>>>> 19e60c1766cbd1467e7f1ed903c699bb82fd3104
