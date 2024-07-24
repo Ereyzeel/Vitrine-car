@@ -344,15 +344,111 @@ footer nav ul a{
 }
 
 
-/* STYLE PAGE VENDA STAR HERE */
+
+/* STYLE PAGE VENDA START HERE */
+
+
 
 section.venda-section{
-    min-height: 100dvh;
-    min-height: 100vh;
-    min-height: 100%;
+    min-height: 90dvh;
+    min-height: 90vh;
+    min-height: 90%;
+    padding: 90px 0;
 }
 
+.sidebar{
+    float: left;
+    width: 30%;
+}
+.content-venda{
+    margin: 40px 0 0 40px;
+}
 
+.filterbar{
+    width: 300px;
+}
+
+.filterbar h2 , .second-filter h2{
+    font-size: 22px;
+    color: black;
+    font-weight: normal;
+}
+
+.filterbar .pricebar{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 15px ;
+    position: relative;
+}
+
+.fillbar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(189, 64, 64);
+    cursor: pointer;
+}
+
+.pointerbar{
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    background: red;
+    border: 1px solid black;
+    position: absolute;
+    left: calc(20% - 13px);
+    top: 0;
+    cursor: pointer;
+}
+
+.valor-da-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-da-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-da-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.second-filter{
+    /* display: inline-block;  USEI CLEAR */
+    padding: 20px 0;
+    
+}
+
+.form-filter-wraper{
+    margin-top: 17px;
+}
+
+.form-filter-wraper input[type=checkbox]{
+    display: none;
+}
+
+.form-filter-wraper label{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-filter-wraper span{
+    padding: 12px;
+    font-weight: normal;
+    font-size: 17px;
+    font-style: italic;
+}
 
 
 
