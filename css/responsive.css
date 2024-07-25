@@ -83,6 +83,23 @@
     .THE-bosses .perfil-img{
         border-radius: 20px;
     }
+
+    .sidebar , .vitrine-venda{
+        text-align: center;
+        width: 100%;
+    }
+
+    .filterbar , .second-filter{
+        display: inline-block;
+    }
+    
+    .second-filter{
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        float: left;
+    }
 }
 
 @media (max-width:414px){
