@@ -359,13 +359,14 @@ section.venda-section{
 .sidebar{
     float: left;
     width: 30%;
+    padding-top: 50px;
 }
 .content-venda{
     margin: 40px 0 0 40px;
 }
 
 .filterbar{
-    width: 300px;
+    width: 90%;
 }
 
 .filterbar h2 , .second-filter h2{
@@ -378,8 +379,8 @@ section.venda-section{
     width: 100%;
     height: 20px;
     background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    border-radius: 10px;
     margin-top: 15px ;
     position: relative;
 }
@@ -390,8 +391,8 @@ section.venda-section{
     top: 0;
     width: 20%;
     height: 20px;
-    border-radius: 5px;
-    background-color: rgb(189, 64, 64);
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
     cursor: pointer;
 }
 
@@ -421,8 +422,7 @@ section.venda-section{
 
 .second-filter{
     /* display: inline-block;  USEI CLEAR */
-    padding: 20px 0;
-    
+     margin-top: 70px;  
 }
 
 .form-filter-wraper{
@@ -441,15 +441,40 @@ section.venda-section{
     border: 1px solid gray;
     cursor: pointer;
     border-radius: 5px;
+    position: relative;
 }
 
-.form-filter-wraper span{
+.form-filter-wraper span{   
     padding: 12px;
     font-weight: normal;
     font-size: 17px;
     font-style: italic;
 }
 
+.form-filter-wraper input[type=checkbox]:checked + label > .checkbox-circle{
+    display: block;
+}
+
+.checkbox-circle{
+    display: none;
+    width: 8px; 
+    height: 8px;
+    border-radius: 4px;  
+    background:black; 
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .THE-bosses{
+    margin-top: 40px;
+
+}
 
 
 
