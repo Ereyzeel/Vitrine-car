@@ -9,7 +9,7 @@ html,body{
     height: 100dvh;
     height: 100vh;
     height: 100%;
-    /* overflow-y: hidden; */
+    /* overflow-z: hidden; */
 }
 
 @font-face {

@@ -131,7 +131,7 @@ section.electro-boss .container{
 }
 
 .line-titulo{
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 0 auto;
     position: relative;
     text-align: center;  
@@ -475,6 +475,69 @@ section.venda-section{
     margin-top: 40px;
 
 }
+
+section.venda-single{
+    padding: 0 2%;
+}
+
+section.venda-single .container{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+
+.info-veiculo-single{
+    float: left;
+    width: 60%;
+}
+
+.foto-single-veiculo{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.single-description{
+    float: left;
+    width: 40%;
+    padding: 30px;
+}
+
+.single-description > a{
+    font-size: 17px;
+    width: 200px;
+    margin: 16px 0;
+}
+
+.single-description p{
+    max-width: 360px;
+    margin-top: 20px;
+}
+
+
+.nav-gallery{
+    width: 100%;
+    padding: 15px;
+    overflow-x: scroll;
+    margin-top: 15px;
+}
+
+.nav-gallery-wraper{
+    width: 200%;
+}
+
+.image-single{
+    float: left;
+    border: 7px solid white;
+    padding-top: calc(33.3% * (100 / 200) * 0.6)  ;
+    width: calc(33.3% * 100 / 200);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 
 
