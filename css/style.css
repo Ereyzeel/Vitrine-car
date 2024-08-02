@@ -263,12 +263,12 @@ section.servicos-descricao {
 }
 
 section.contato{
-    padding: 80px 2%;
+    padding: 80px 2% 0 2%;
 }
 
 section.contato form{
     max-width: 600px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 section.contato .input-wraper{
@@ -279,7 +279,8 @@ section.contato .input-wraper{
 section.contato input[type=text]{
     width: 100%;
     border:1px solid gray;
-    height: 40px;
+    height: 60px;
+    font-size: 16px;
     line-height: 40px;
     padding-left: 10px;
 }
@@ -287,6 +288,7 @@ section.contato input[type=text]{
 section.contato textarea{
     width: 100%;
     border: 1px soli gray;
+    font-size: 16px;
     height: 120px;
     padding: 8px;
     resize: none;
@@ -481,27 +483,52 @@ section.venda-single{
 }
 
 section.venda-single .container{
-    padding: 40px 0;
-    max-width: 1000px;
+    padding: 40px 0 0 0;
+    max-width: 1280px;
+}
+
+section.venda-single > .line-titulo{
+    margin-top: 40px;
+    min-width: 1280px;
+
 }
 
 .info-veiculo-single{
-    float: left;
-    width: 60%;
+    display: inline-block;
+    width: 55%;
+}
+
+.info-bread{
+    font-size: 13px;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.info-bread a{
+    text-decoration: none;
+    color: black;
+}
+
+.info-bread a:last-child{
+    color: rgb(199, 48, 48);
+}
+
+.info-bread span{
+    padding: 0 30px;
 }
 
 .foto-single-veiculo{
     width: 100%;
     padding-top: 70%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .single-description{
-    float: left;
-    width: 40%;
-    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 55px 30px;
 }
 
 .single-description > a{
@@ -511,30 +538,61 @@ section.venda-single .container{
 }
 
 .single-description p{
-    max-width: 360px;
+    font-size: 17px;
+    max-width: 300px;
     margin-top: 20px;
 }
 
+.nav-gallery-parent{
+    width: 100%;
+    padding: 35px;
+    position: relative;
+}
+
+.left-a{
+    left:8px;
+    background-image: url(../images/arrow-left.png);
+}
+
+.right-a{
+    right: 8px;
+    background-image: url(../images/arrow-right.png);
+}
+
+.arrow-nav{
+    transform: translateY(-50%);
+    -ms-transform: translate(-50%);
+    position: absolute;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    cursor: pointer;
+}
 
 .nav-gallery{
+    cursor: pointer;
     width: 100%;
-    padding: 15px;
-    overflow-x: scroll;
-    margin-top: 15px;
+    overflow: hidden;
 }
 
 .nav-gallery-wraper{
     width: 200%;
 }
 
+.image-single-wraper{
+	float: left;
+	padding:9px;
+	width:calc(33.3% * (100 / 200));
+}
+
 .image-single{
-    float: left;
-    border: 7px solid white;
-    padding-top: calc(33.3% * (100 / 200) * 0.6)  ;
-    width: calc(33.3% * 100 / 200);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+	cursor: pointer;
+	padding-top:70%;
+	background-position: center;
+	background-size: cover;
+	background-color:green;
 }
 
 
