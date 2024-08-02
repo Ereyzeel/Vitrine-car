@@ -50,7 +50,8 @@
     }
     
     nav.mobile{
-        display:block;
+        /* display:block; */
+        display: none;
         float: right;
     }
 
@@ -100,6 +101,32 @@
     .vitrine-venda{
         float: left;
     }
+    
+    .info-veiculo-single{
+        width: 100%;
+    }
+
+    .single-description{
+		padding:20px 0;
+        text-align: center;
+    }   
+
+    .single-description a{
+        display: inline-block;
+    }
+
+    .single-description p{
+        max-width: none;
+    }
+
+    .info-bread{
+        padding: 10px 0;
+    }
+    
+    .info-bread span{
+        padding: 0 17px;
+    }
+    
 }
 
 @media (max-width:414px){
