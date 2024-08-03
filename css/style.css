@@ -315,6 +315,7 @@ section.contato input[type=submit]{
 }
 
 footer{
+    margin-top: 20px;
     padding: 30px 2%;
     background:#1d141a ;
 }
@@ -594,6 +595,60 @@ section.venda-single > .line-titulo{
 	background-size: cover;
 	background-color:green;
 }
+
+section.sobre{
+    min-height: 90dvh;
+    min-height: 90vh;
+    min-height: 90%;
+    padding:60px 2% 20px 2%;
+}
+
+section.sobre .container{
+    margin-top: 30px;
+    max-width: 840px;
+}
+
+section.sobre .main-img-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-color: rgb(131, 118, 118);
+}
+
+
+section.sobre .description-us1{
+    margin-top: 20px;
+}
+
+section.sobre .description-us1 h2{
+    font-size: 24px;
+}
+
+section.sobre .description-us1 p{
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.description-us2{
+    margin-top: 20px;
+}
+
+.main-img-us{
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    background-color: gray;
+}
+
+.description-us2 p{
+    line-height: 37px;
+    float: left;
+    width: 70%;
+    padding: 30px;
+}
+
+
+
 
 
 

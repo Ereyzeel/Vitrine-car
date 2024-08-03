@@ -11,6 +11,7 @@
     }
 } */
 
+
 @media (max-width:768px){
 
     footer nav ul{
@@ -50,13 +51,12 @@
     }
     
     nav.mobile{
-        /* display:block; */
-        display: none;
+        display:block;
         float: right;
     }
 
     nav.mobile ul{
-        display: block;
+        display: none;
     }
 
     nav.desktop{
@@ -126,6 +126,11 @@
     .info-bread span{
         padding: 0 17px;
     }
+
+    .description-us2 p{
+        line-height: 27px;
+        padding: 0 20px;
+    }
     
 }
 
@@ -156,6 +161,16 @@
 
     .THE-bosses{
         width: 100%;
+    }
+
+    .main-img-us{
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .description-us2 p{
+        width: 100%;
+        padding: 40px;
     }
 }
 
