@@ -3,7 +3,7 @@ $(function(){
     //Barra de progresso ta no 0
     var currentValue = 0;
     var isDrag = false;
-    var precoMaximo = 250000
+    var precoMaximo = 70000
     var precoAtual = 0
 
 
@@ -35,10 +35,30 @@ $(function(){
             $('.fillbar').css('width',currentValue+'%')
             
             precoAtual = (currentValue/100) * precoMaximo;
+            precoAtual = formatarPreco(precoAtual);
             $('#precoPesquisa').html('R$'+precoAtual)            
         }
         
     });
+
+    function formatarPreco(precoAtual){
+        precoAtual = precoAtual.toFixed(2); //toFixed(2) é o máximo de numeros depois da vírgula é 2
+        precoArr = precoAtual.split('.'); //O preço  vai ser divido em das partes
+
+        var novoPreco = formatarTotal(precoArr)
+
+        return novoPreco
+      }
+
+      function formatarTotal(precoArr){
+            if(precoArr[0] < 1000){
+                return precoArr[0]+','+precoArr[1]
+            }else if(precoArr[0] < 10000){
+                return precoArr[0][0]+'.'+precoArr[0].substr(1,precoArr[0].length)+','+precoArr[1]
+            }else{
+                return precoArr[0][0]+precoArr[0][1]+'.'+precoArr[0].substr(2,precoArr[0].length)+','+precoArr[1]
+            }
+      }
 
     function disableTextSelection(){ 
         $('body').css("-webkit-user-select","none")
@@ -57,8 +77,62 @@ $(function(){
         $('body').css("user-select","auto")
      }
 
+     var imgShow = 3;
+     var maxIndex = Math.ceil($('.image-single-wraper').length/3) - 1;
+     var curIndex = 0
+
+    initSlider();
+    navigateSlider();
+    clickSlider();
+     function initSlider(){
+        var amount = $('.image-single-wraper').length *  33.3;
+        var elScroll = $('.nav-gallery-wraper');
+        var elSingle = $('.image-single-wraper');
+        elScroll.css('width',amount+'%');
+        elSingle.css('width',33.3*(100/amount)+'%')
+           };
+
+
+        function navigateSlider(){
+            $('.arrow-nav.right-a').click(function() {
+                if(curIndex < maxIndex){
+                    curIndex++;
+                    var elOff = $('.image-single-wraper').eq(curIndex*3).offset().left - $('.nav-gallery-wraper').offset().left;
+                    $('.nav-gallery').animate({'scrollLeft':elOff+'px'});
+                }else{
+                    console.log('omagaw')
+                }
+              })
+
+              $('.arrow-nav.left-a').click(function() {
+                if(curIndex > 0){
+                    curIndex--;
+                    var elOff = $('.image-single-wraper').eq(curIndex*3).offset().left - $('.nav-gallery-wraper').offset().left;
+                    $('.nav-gallery').animate({'scrollLeft':elOff+'px'});
+                }else{
+                    console.log('omagaw')
+                }
+              })
+          };
+
+          function clickSlider(){
+            $('.image-single-wraper').click(function(){
+                $('.image-single-wraper').css('background-color','transparent');
+                $(this).css('background-color','rgb(210,210,210)');
+                var img = $(this).children().css('background-image');
+                $('.foto-single-veiculo').css('background-image',img)
+              })
+
+              $('.image-single-wraper').eq(0).click();
+          }
 })
    
+
+
+
+//style="background-image: url(../images/carro1.jpg);"
+
+
 
 
 

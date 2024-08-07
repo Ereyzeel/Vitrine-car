@@ -485,7 +485,7 @@ section.venda-single{
 
 section.venda-single .container{
     padding: 40px 0 0 0;
-    max-width: 1280px;
+    max-width: 1000px;
 }
 
 section.venda-single > .line-titulo{
@@ -578,13 +578,13 @@ section.venda-single > .line-titulo{
 }
 
 .nav-gallery-wraper{
-    width: 200%;
+    /* width: 200%;   Pelo JS*/
 }
 
 .image-single-wraper{
 	float: left;
 	padding:9px;
-	width:calc(33.3% * (100 / 200));
+	/* width:calc(33.3% * (100 / 200));  PELO JS */
 }
 
 .image-single{
