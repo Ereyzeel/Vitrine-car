@@ -125,6 +125,13 @@ $(function(){
 
               $('.image-single-wraper').eq(0).click();
           }
+
+          $('[goto=contato]').click(function(){
+            $('nav a').css('color','black') ;
+            $(this).css('color','brown')
+            $('html,body').animate({'scrollTop':$('#contato').offset().top});
+            return false;
+          })
 })
    
 
