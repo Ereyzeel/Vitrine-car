@@ -126,12 +126,71 @@ $(function(){
               $('.image-single-wraper').eq(0).click();
           }
 
+          //Clicar contato ir pra contato
+
+          var directory = 'http://127.0.0.1:5500/' //Diretório da pasta/servidor do projeto
+
+
           $('[goto=contato]').click(function(){
-            $('nav a').css('color','black') ;
-            $(this).css('color','brown')
-            $('html,body').animate({'scrollTop':$('#contato').offset().top});
+            location.href=directory+'index.html?contato'; //Vai mudar a url quando clicar no contato
             return false;
           })
+
+          checkUrl();
+
+          function checkUrl(){
+            var url = location.href.split('/');
+            var curPage = url[url.length-1].split('?');
+            
+            if(curPage[1] != undefined && curPage[1] == 'contato'){
+                $('header nav a').css('color','black') ;
+                $('footer nav a').css('color','white') ;
+                $('[goto=contato]').css('color','brown')
+                $(this).css('color','brown')
+                $('html,body').animate({'scrollTop':$('#contato').offset().top});
+                return false;
+                }
+            }
+
+            //MENU RESPONSIVO
+
+            $('.mobile').click(function(){
+                $(this).find('ul').slideToggle()
+            })
+
+            //Slider Depoimentos
+
+            var amtDepoimento = $('.right p').length;
+            var curIndex = 0
+            
+            navigateDep();
+            initDep();
+
+            function initDep(){
+                $('.right p').hide();
+                $('.right p').eq(0).show();
+              }
+
+            function navigateDep(){
+                $('#next').click(function(){
+                        curIndex ++;
+                        if(curIndex >= amtDepoimento)
+                            curIndex = 0;
+                        $('.right p').hide();
+                        $('.right p').eq(curIndex).show();
+                    
+                })
+
+                $('#prev').click(function(){
+                    curIndex --;
+                    if(curIndex < 0)
+                        curIndex = amtDepoimento - 1;
+                    $('.right p').hide();
+                    $('.right p').eq(curIndex).show();
+                })
+            }
+            
+
 })
    
 
