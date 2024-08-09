@@ -1,8 +1,17 @@
+:root{
+    --font-primary:'Changa One', sans-serif;
+    --font-secundary:'Signika', serif;
+    --16px:1rem;
+    --24px:1.5rem;
+    --32px:2rem;
+    --300px:18.75rem;
+}
+
 
 header{
     padding: 30px 4%;
-    font-family: 'genshin font', sans-serif;
 }
+
 
 header div.logo, nav.desktop ul li{
     float: left;
