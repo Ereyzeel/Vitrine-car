@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "genshin font" ;
+    font-family:sans-serif , serif ;
 }
 
 html,body{
@@ -12,10 +12,17 @@ html,body{
     /* overflow-z: hidden; */
 }
 
-@font-face {
-    font-family: "genshin font" ;
-    src:url('../fonts/genshin-font.ttf');
+body h2, a , footer nav.nav-footer p  {
+    font-family: var(--font-primary);
 }
+
+body p , li , input , textarea , section.banner  .text-banner-single , span{
+    font-family: var(--font-secundary);
+}
+
+/* @font-face {
+    font-family: "Teko", sans-serif;
+} */
 
 .clear{
     clear: both;
