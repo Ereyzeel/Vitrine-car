@@ -1,19 +1,19 @@
 $(function(){
 
-    //Barra de progresso ta no 0
+    //​‌‍‌𝗕𝗮𝗿𝗿𝗮 𝗱𝗲 𝗽𝗿𝗼𝗴𝗿𝗲𝘀𝘀𝗼 𝘁𝗮 𝗻𝗼 𝟬​
     var currentValue = 0;
     var isDrag = false;
     var precoMaximo = 70000
     var precoAtual = 0
 
 
-    //mouse pressionado = drag ativado
+    //​‌‍‌‍𝗺𝗼𝘂𝘀𝗲 𝗽𝗿𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗱𝗼 = 𝗱𝗿𝗮𝗴 𝗮𝘁𝗶𝘃𝗮𝗱𝗼​
     $('.pointerbar').mousedown(function(){
         isDrag = true
     })
 
     
-    //mouse "inativo" = drag não
+    //​‌‍‌𝗺𝗼𝘂𝘀𝗲 "𝗶𝗻𝗮𝘁𝗶𝘃𝗼" = 𝗱𝗿𝗮𝗴 𝗻ã𝗼​
     $(document).mouseup(function(){
         isDrag = false
         enableTextSelection
@@ -42,8 +42,8 @@ $(function(){
     });
 
     function formatarPreco(precoAtual){
-        precoAtual = precoAtual.toFixed(2); //toFixed(2) é o máximo de numeros depois da vírgula é 2
-        precoArr = precoAtual.split('.'); //O preço  vai ser divido em das partes
+        precoAtual = precoAtual.toFixed(2); //𝘵𝘰𝘍𝘪𝘹𝘦𝘥(2) é 𝘰 𝘮á𝘹𝘪𝘮𝘰 𝘥𝘦 𝘯𝘶𝘮𝘦𝘳𝘰𝘴 𝘥𝘦𝘱𝘰𝘪𝘴 𝘥𝘢 𝘷í𝘳𝘨𝘶𝘭𝘢 é 2
+        precoArr = precoAtual.split('.'); //𝘖 𝘱𝘳𝘦ç𝘰  𝘷𝘢𝘪 𝘴𝘦𝘳 𝘥𝘪𝘷𝘪𝘥𝘰 𝘦𝘮 𝘥𝘢𝘴 𝘱𝘢𝘳𝘵𝘦𝘴
 
         var novoPreco = formatarTotal(precoArr)
 
@@ -126,13 +126,13 @@ $(function(){
               $('.image-single-wraper').eq(0).click();
           }
 
-          //Clicar contato ir pra contato
+          //​‌‍‌𝗖𝗹𝗶𝗰𝗮𝗿 𝗰𝗼𝗻𝘁𝗮𝘁𝗼 𝗶𝗿 𝗽𝗿𝗮 𝗰𝗼𝗻𝘁𝗮𝘁𝗼​
 
-          var directory = 'http://127.0.0.1:5500/' //Diretório da pasta/servidor do projeto
+          var directory = 'http://127.0.0.1:5500/' //𝘋𝘪𝘳𝘦𝘵ó𝘳𝘪𝘰 𝘥𝘢 𝘱𝘢𝘴𝘵𝘢/𝘴𝘦𝘳𝘷𝘪𝘥𝘰𝘳 𝘥𝘰 𝘱𝘳𝘰𝘫𝘦𝘵𝘰
 
 
           $('[goto=contato]').click(function(){
-            location.href=directory+'index.html?contato'; //Vai mudar a url quando clicar no contato
+            location.href=directory+'index.html?contato'; //𝘝𝘢𝘪 𝘮𝘶𝘥𝘢𝘳 𝘢 𝘶𝘳𝘭 𝘲𝘶𝘢𝘯𝘥𝘰 𝘤𝘭𝘪𝘤𝘢𝘳 𝘯𝘰 𝘤𝘰𝘯𝘵𝘢𝘵𝘰
             return false;
           })
 
@@ -152,13 +152,13 @@ $(function(){
                 }
             }
 
-            //MENU RESPONSIVO
+            //​‌‍‌𝗠𝗘𝗡𝗨 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗜𝗩𝗢​
 
             $('.mobile').click(function(){
                 $(this).find('ul').slideToggle()
             })
 
-            //Slider Depoimentos
+            //​‌‍‌𝗦𝗹𝗶𝗱𝗲𝗿 𝗗𝗲𝗽𝗼𝗶𝗺𝗲𝗻𝘁𝗼𝘀​
 
             var amtDepoimento = $('.right p').length;
             var curIndex = 0
