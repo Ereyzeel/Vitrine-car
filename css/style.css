@@ -79,6 +79,8 @@ nav.mobile li a{
     color: white;
     font-family: genshin font;
     font-size: 25px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 3px 3px rgba(70, 69, 69, 0.493);
     background-image: url(../images/box-text.png);
     background-size: 100% 100%;
 }
@@ -110,7 +112,8 @@ nav.mobile li a{
     height: 80vh;
     min-height: 600px;
     /* background-color: purple; */
-    background-image: url(../images/bg.jpg);
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%); */
+    background-image: url(../images/cover-banner-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -120,11 +123,11 @@ img{
 }
 
 
-section.electro-boss{
+section.destaque-container{
     padding: 90px 2% 100px 2%;
 }
 
-section.electro-boss .container{
+section.destaque-container .container{
     max-width: 1000px;
     padding: 40px 0;
 }
@@ -154,31 +157,42 @@ section.electro-boss .container{
     background: black;
 }
 
-.THE-bosses{
+.destaque-produto-container{
     float: left;
     width: 33.3%;
 }
 
-.THE-bosses .perfil-img{
+.destaque-produto-container .perfil-img{
     width: 100%;
-    padding-top: 100%;
-    background-size: 100% 100%;
-    border: 8px solid white;
+    height: 45vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding: 8px;
 }
 
-.THE-bosses h2{
+.destaque-produto-container h2{
     color: black;
     font-style: italic;
     font-size: 20px;
     padding-left: 8px;    
 }
 
-.THE-bosses p{
+.destaque-produto-container p{
     padding: 8px 0 0 8px;
     font-style: italic;
     color: rgb(32, 32, 32);
     font-size: 12px;
 }
+
+
+/* .container.end-page{
+    display:flex;
+    justify-content: space-evenly;
+} */
+
+/* .destaque-produto-container img.end-page{
+    padding: 60px 60px 13px 20px;
+} */
 
 .btn-default{
     display: block;
@@ -198,7 +212,10 @@ section.electro-boss .container{
     border-right:  6px solid #e66565;
 }
 
-.THE-bosses a{
+.btn-default:hover{
+}
+
+.destaque-produto-container a{
     font-size: 14px;
 }
 
@@ -242,6 +259,9 @@ section.servicos-descricao {
 
 .right{     
     background-color: #a35b5e;
+}
+.info-depoimento{
+    height: 40px; 
 }
 
 .right p {
@@ -483,7 +503,7 @@ section.venda-section{
     width: 70%;
 }
 
-.vitrine-venda .THE-bosses{
+.vitrine-venda .destaque-produto-container{
     margin-top: 40px;
 
 }
@@ -529,7 +549,6 @@ section.venda-single > .line-titulo{
 
 .foto-single-veiculo{
     width: 100%;
-    padding-top: 70%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -599,10 +618,9 @@ section.venda-single > .line-titulo{
 .image-single{
     width: 100%;
 	cursor: pointer;
-	padding-top:70%;
 	background-position: center;
 	background-size: cover;
-	background-color:green;
+	
 }
 
 section.sobre{

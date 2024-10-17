@@ -63,25 +63,25 @@
         display: none;
     }   
 
-    section.electro-boss .container{
+    section.destaque-container .container{
         max-width: 1000px;
         padding: 40px 0;
         text-align: center;
     } 
 
-    .THE-bosses{
+    .destaque-produto-container{
         float: none;
         display: inline-block;
         width: 80%;
     }
 
-    .THE-bosses a{
+    .destaque-produto-container a{
         margin: 15px;
         display: inline-block;
         border-radius: 20px;
     }
 
-    .THE-bosses .perfil-img{
+    .destaque-produto-container .perfil-img{
         border-radius: 20px;
     }
 
@@ -131,6 +131,10 @@
         line-height: 27px;
         padding: 0 20px;
     }
+
+    .left{
+        height: auto;
+    }
     
 }
 
@@ -159,7 +163,7 @@
         height: 80px;
     }
 
-    .THE-bosses{
+    .destaque-produto-container{
         width: 100%;
     }
 

@@ -119,8 +119,8 @@ $(function(){
             $('.image-single-wraper').click(function(){
                 $('.image-single-wraper').css('background-color','transparent');
                 $(this).css('background-color','rgb(210,210,210)');
-                var img = $(this).children().css('background-image');
-                $('.foto-single-veiculo').css('background-image',img)
+                var img = $(this).children().attr('src');
+                $('.foto-single-veiculo').attr('src',img)
               })
 
               $('.image-single-wraper').eq(0).click();
