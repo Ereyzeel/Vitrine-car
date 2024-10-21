@@ -80,7 +80,7 @@ nav.mobile li a{
     font-family: genshin font;
     font-size: 25px;
     opacity: 0.8;
-    box-shadow: 3px 3px 3px 3px rgba(70, 69, 69, 0.493);
+    filter:drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
     background-image: url(../images/box-text.png);
     background-size: 100% 100%;
 }
